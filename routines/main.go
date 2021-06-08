@@ -1,6 +1,7 @@
 package main
 
 import "log"
+import "fmt"
 
 func main() {
 	urls := []string{
@@ -10,9 +11,10 @@ func main() {
 	"devlog.flyingfortressgames.com",
 	}
 
-	log.Println("Intend to check the urls in the array ")
+	fmt.Println("Intend to check the urls in the array ")
 	for _, value := range urls {
 		  log.Printf("- %s\n", value)
 	}
-
+	fmt.Println("### Checking urls now. ###")
+	checkLinks(urls)
 }
