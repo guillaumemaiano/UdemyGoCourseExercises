@@ -6,6 +6,7 @@ import "fmt"
 func main() {
 	urls := []string{
 	"www.maiano.fr",
+	"guillaume.maiano.fr",
 	"minicampaigns.dragonshard.org",
 	"www.flyingfortressgames.com",
 	"devlog.flyingfortressgames.com",
