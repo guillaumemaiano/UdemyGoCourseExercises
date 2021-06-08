@@ -7,6 +7,7 @@ func checkLinks( urls []string) {
 	c := make(chan string)
 	for _, url := range urls {
 		go checkLink(url, c)
+		// this is a blocking statement and it makes the previous line kinda pointless
 		log.Println(<- c)
 	}
 }
